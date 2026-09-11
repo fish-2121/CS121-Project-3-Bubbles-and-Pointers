@@ -19,11 +19,8 @@ void sort(int* arr) {
     int currentLength = MAX - 1;
 
 
-    printf("before: [ ");
-    for (int i = 0; i < MAX; i++) {
-        printf("%d ", arr[i]);
-    }
-    printf("] \n");
+    printf("before: ");
+    printNumbers(arr);
 
 
     for (int cycle = 0; cycle < MAX - 1; cycle++) {
@@ -42,11 +39,8 @@ void sort(int* arr) {
 
 
                 printf("swapped numbers \n");
-                printf("new numbers: [ ");
-                for (int i = 0; i < MAX; i++) {
-                    printf("%d ", arr[i]);
-                }
-                printf("] \n");
+                printf("new numbers: ");
+                printNumbers(arr);
             } // end of index loop
         } // end of index loop
         currentLength--;
@@ -55,15 +49,16 @@ void sort(int* arr) {
     } // end of arrayLength loop
 
 
-    printf("after: [ ");
-    for (int i = 0; i < MAX; i++) {
-        printf("%d ", arr[i]);
-    }
-    printf("] \n");
+    printf("after: ");
+    printNumbers(arr);
 }
 
 
 
 void printNumbers(int* arr) {
-    
+    printf("[ ");
+    for (int i = 0; i < MAX; i++) {
+            printf("%d ", arr[i]);
+    }
+    printf("] \n");
 }
