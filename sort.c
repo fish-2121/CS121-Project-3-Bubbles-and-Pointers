@@ -1,20 +1,21 @@
 #include <stdio.h>
 
+const int MAX = 10;
+
 int main() {
-    int numbers[5] = {5, 4, 3, 2, 1};
-    int arrayLength = sizeof(numbers) / 4; // ints are 4 bytes long and there are 5 of them in the array, so it would return 20 if not divided by 4
-    printf("size: %d \n", arrayLength);
-    int currentLength = arrayLength - 1;
+    int numbers[] = {5, 2, 4, 3, 9, 7, 8, 6, 10, 1};
+    printf("size: %d \n", MAX);
+    int currentLength = MAX - 1;
 
 
     printf("before: [ ");
-    for (int i = 0; i < arrayLength; i++) {
+    for (int i = 0; i < MAX; i++) {
         printf("%d ", numbers[i]);
     }
     printf("] \n");
 
 
-    for (int cycle = 0; cycle < arrayLength - 1; cycle++) {
+    for (int cycle = 0; cycle < MAX - 1; cycle++) {
         printf("started new cycle \n");
         for (int index = 0; index < currentLength; index++) {
             printf("current index: %d \n", index);
@@ -31,7 +32,7 @@ int main() {
 
                 printf("swapped numbers \n");
                 printf("new numbers: [ ");
-                for (int i = 0; i < arrayLength; i++) {
+                for (int i = 0; i < MAX; i++) {
                     printf("%d ", numbers[i]);
                 }
                 printf("] \n");
@@ -44,7 +45,7 @@ int main() {
 
 
     printf("after: [ ");
-    for (int i = 0; i < arrayLength; i++) {
+    for (int i = 0; i < MAX; i++) {
         printf("%d ", numbers[i]);
     }
     printf("] \n");
