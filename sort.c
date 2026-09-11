@@ -38,8 +38,7 @@ void sort(int* arr) {
                 arr[index + 1] = tempA;
 
 
-                printf("swapped numbers \n");
-                printf("new numbers: ");
+                printf("swapped numbers \nnew numbers: ");
                 printNumbers(arr);
             } // end of index loop
         } // end of index loop
