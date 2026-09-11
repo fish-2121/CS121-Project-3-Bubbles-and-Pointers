@@ -4,7 +4,7 @@
 ### Sorting algorithm:
 - store length of the array in constant variable MAX
 - create the variable currentLength with value of MAX - 1. this will be used to optimize the sort by not checking numbers that have already been sorted. it starts with the - 1 so that when the numbers are being compared with each other, there won't be an out of bounds error
-- create an if statement like this: (int cycle = 0; cycle < MAX - 1; cycle++)
+- create an if statement like this: (int cycle = 0; cycle < MAX - 1; cycle++) 1 is subtracted from MAX to avoid an out of bounds error
 - create an if statement inside of the previous one like this: for (int index = 0; index < currentLength; index++)
 - create int variables a and b
 - assign a array[index] and b array[index+1]
