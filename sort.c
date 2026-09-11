@@ -50,7 +50,7 @@ void sort(int* arr) {
 
     printf("after: ");
     printNumbers(arr);
-}
+} // end of sort function
 
 
 
@@ -58,6 +58,6 @@ void printNumbers(int* arr) {
     printf("[ ");
     for (int i = 0; i < MAX; i++) {
             printf("%d ", arr[i]);
-    }
+    } // end of for loop
     printf("] \n");
-}
+} // end of printNumbers function
