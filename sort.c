@@ -4,7 +4,6 @@ const int MAX = 10;
 
 int main() {
     int numbers[] = {5, 2, 4, 3, 9, 7, 8, 6, 10, 1};
-    printf("size: %d \n", MAX);
     int currentLength = MAX - 1;
 
 
